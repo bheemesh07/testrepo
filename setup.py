@@ -15,7 +15,7 @@ setup(
     name="datakickstart_dabs",
     version=datakickstart_dabs.__version__,
     url="https://databricks.com",
-    author="training@dustinvannoy.com",
+    author="bheemesh_07@outlook.com",
     description="my test wheel",
     packages=find_packages(where='./src'),
     package_dir={'': 'src'},

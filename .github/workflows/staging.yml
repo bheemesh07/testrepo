@@ -24,7 +24,7 @@ jobs:
 
       - run: databricks bundle deploy -t staging
         env:
-          DATABRICKS_TOKEN: ${{ secrets.DATABRICKS_TOKEN }}
+          DATABRICKS_TOKEN: dapid02e9e0b560a0134e6090cfcb5b877b7-3
           DATABRICKS_BUNDLE_ENV: staging
 
   pipeline_update:
@@ -53,5 +53,5 @@ jobs:
           set -o pipefail
           databricks bundle run datakickstart_dabs_job -t staging --refresh-all 2>&1 | tee output.log
         env:
-          DATABRICKS_TOKEN: ${{ secrets.DATABRICKS_TOKEN }}
+          DATABRICKS_TOKEN: dapid02e9e0b560a0134e6090cfcb5b877b7-3
           DATABRICKS_BUNDLE_ENV: staging
